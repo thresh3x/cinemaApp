@@ -1,0 +1,20 @@
+{
+    "banner": [
+        {
+            "id": 10001,
+            "title": "灌篮高手",
+            "imgUrl": "https://pic.maizuo.com/usr/movie/8477c92681e64ca86bf04cbf2c9d6453.jpg"
+        },
+        {
+            "id": 20001,
+            "title": "暴风",
+            "imgUrl": "https://pic.maizuo.com/usr/movie/f424beea1acb9d7877976d82bd435291.jpg"
+        },
+        {
+            "id": 30001,
+            "title": "龙马精神",
+            "imgUrl": "https://pic.maizuo.com/usr/movie/19162f471571afdbd6fbd6ad82b951e6.jpg"
+                
+        }
+    ]
+}

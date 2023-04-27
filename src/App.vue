@@ -1,32 +1,50 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div>
+    <tabBar v-if="$store.state.isTabBarShow"></tabBar>
+    <section>
+      <router-view></router-view>
+    </section>
   </div>
 </template>
+<script>
+import Vue from 'vue'
+import Vant from 'vant'
+import 'vant/lib/index.css'
+import tabBar from '@/components/TabBar.vue'
+// 全局引用Vant
+Vue.use(Vant)
+export default {
+  data () {
+    return {
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
     }
+  },
+  components: {
+    tabBar
   }
 }
+</script>
+
+<style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+}
+
+section {
+  padding-bottom: 3.0625rem;
+}
+
 </style>
