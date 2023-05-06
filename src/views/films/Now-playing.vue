@@ -11,8 +11,8 @@
       >
             <van-cell v-for="data in datalist" :key="data.filmId" @click="handleChangePage(data.filmId)">
                 <img :src="data.poster">
-                <div>
-                  <div class="title">{{ data.name }}</div>
+                <div class="textBox">
+                  <div class="title"><div>{{ data.name }}</div><div class="itemName">{{ data.item.name }}</div></div>
                   <div class="content">
                     <div>观众评分：<span style="color: red;">{{ data.grade||'暂无' }}</span></div>
                     <div class="actors">主演：{{ data.actors | actorsFilter }}</div>
@@ -91,25 +91,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  .van-list {
-    .van-cell {
-      overflow: hidden;
-      padding: .9375rem;
-      border-bottom: 1px solid rgb(207, 207, 207);
-      img {
-        width: 4.125rem;
-        float:left;
-      }
-      .content {
-        font-size: 13px;
-        color: gray;
-        .actors {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          width: 12.5rem;
-        }
-      }
-    }
-  }
+  @import '@/assets/css/filmsPlaying.scss'
 </style>

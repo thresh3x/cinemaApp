@@ -1,0 +1,42 @@
+.van-list {
+  .van-cell {
+    overflow: hidden;
+    padding: .9375rem;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    img {
+      width: 4.125rem;
+      float:left;
+    }
+    .textBox {
+      height: 6.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      div {
+        margin-right: 13px;
+      }
+      .itemName {
+        font-size: 13px;
+        color: #fff;
+        padding: 0 2px;
+        background-color: gray;
+        border-radius: 5px;
+      }
+    }
+    .content {
+      font-size: 13px;
+      color: gray;
+      .actors {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 12.5rem;
+      }
+    }
+  }
+}
